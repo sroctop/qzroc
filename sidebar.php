@@ -44,7 +44,7 @@
         </div>
     </div>
     <div class="logins">
-        <h3 class="title-sidebar"><i class="layui-icon">&#xe66e;</i>用户</h3>
+        <h3 class="title-sidebar"><i class="layui-icon">&#xe66f;</i>用户</h3>
         <div>
             <?php if ($this->user->hasLogin()) : ?>
             <li class="last"><a href="<?php $this->options->adminUrl(); ?>"><?php _e('进入后台'); ?> (<?php $this->user->screenName(); ?>)</a></li>
