@@ -69,11 +69,12 @@ echo $commentClass;
                         <a href="<?php $this->options->logoutUrl(); ?>" title="Logout"><?php _e('退出'); ?> &raquo;</a>
                     </div>
                 </div>
-                
+                <?php $comments->smilies(); ?>
                 <div class="layui-form-item">
                     <textarea rows="5" cols="30" name="text" id="textarea" placeholder="嘿~ 大神，别默默的看了，快来点评一下吧" class="layui-textarea" required></textarea>
                 </div>
                 <?php else: ?>
+                <?php $comments->smilies(); ?>
                 <div class="layui-form-item">
                     <textarea rows="5" cols="30" name="text" id="textarea" placeholder="嘿~ 大神，别默默的看了，快来点评一下吧" class="layui-textarea" required></textarea>
                 </div>
