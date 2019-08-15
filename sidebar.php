@@ -34,7 +34,7 @@
             ?>
         </ul>
     </div>
-    <div class="tags" style="display: none;">
+    <div class="tags">
         <h3 class="title-sidebar"><i class="layui-icon">&#xe66e;</i>标签云</h3>
         <div>
             <?php $this->widget('Widget_Metas_Tag_Cloud', 'ignoreZeroCount=1&limit=30')->to($tags); ?>

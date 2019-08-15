@@ -56,7 +56,7 @@
                 </dl>
             </li>
             <li class="layui-nav-item layui-hide-xs">
-                <a href="http://wpa.qq.com/msgrd?v=3&uin=756853308&site=qq&menu=yes"><?php _e('联系我'); ?></a> 
+                <a href="http://wpa.qq.com/msgrd?v=3&uin=756853308&site=qq&menu=yes" target="_blank"><?php _e('联系我'); ?></a> 
             </li>
         </ul>
     </div>
