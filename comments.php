@@ -71,11 +71,11 @@ echo $commentClass;
                 </div>
                 <?php Smilies_Plugin::output(); ?>
                 <div class="layui-form-item">
-                    <textarea rows="5" cols="30" name="text" id="textarea comments" placeholder="嘿~ 大神，别默默的看了，快来点评一下吧" class="layui-textarea" required></textarea>
+                    <textarea rows="5" cols="30" name="text" id="textarea comment" placeholder="嘿~ 大神，别默默的看了，快来点评一下吧" class="layui-textarea" required></textarea>
                 </div>
                 <?php else: ?>
                 <div class="layui-form-item">
-                    <textarea rows="5" cols="30" name="text" id="textarea comment" placeholder="嘿~ 大神，别默默的看了，快来点评一下吧" class="layui-textarea" required></textarea>
+                    <textarea rows="5" cols="30" name="text" id="textarea comments" placeholder="嘿~ 大神，别默默的看了，快来点评一下吧" class="layui-textarea" required></textarea>
                 </div>
                 <div class="layui-form-item layui-row layui-col-space5">
                     <div class="layui-col-md4">
