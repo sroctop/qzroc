@@ -1,6 +1,9 @@
 <?php
 /**
- * @author roc
+ * qzroc模板主题。点击进入主页<a href="https://www.qzroc.com">大鹏博客</a>
+ * 
+ * @package qzroc
+ * @author 孙大鹏
  * @version 1.0
  * @link https://www.qzroc.com
  */
