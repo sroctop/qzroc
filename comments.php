@@ -69,6 +69,7 @@ echo $commentClass;
                         <a href="<?php $this->options->logoutUrl(); ?>" title="Logout"><?php _e('退出'); ?> &raquo;</a>
                     </div>
                 </div>
+                <?php Smilies_Plugin::output(); ?>
                 <div class="layui-form-item">
                     <textarea rows="5" cols="30" name="text" id="textarea comments" placeholder="嘿~ 大神，别默默的看了，快来点评一下吧" class="layui-textarea" required></textarea>
                 </div>
@@ -93,7 +94,7 @@ echo $commentClass;
                 </div>
             </form>
         </div>
-        <?php Smilies_Plugin::output(); ?>
+        
         <?php if ($comments->have()): ?>
             <br/>
             <h3><?php $this->commentsNum(_t('暂无评论'), _t('唉呀 ~ 仅有一条评论'), _t('已有 %d 条评论')); ?></h3>
