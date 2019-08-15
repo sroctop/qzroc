@@ -70,11 +70,11 @@ echo $commentClass;
                     </div>
                 </div>
                 <div class="layui-form-item">
-                    <textarea rows="5" cols="30" name="text" id="textarea" placeholder="嘿~ 大神，别默默的看了，快来点评一下吧" class="layui-textarea" required></textarea>
+                    <textarea rows="5" cols="30" name="text" id="textarea comments" placeholder="嘿~ 大神，别默默的看了，快来点评一下吧" class="layui-textarea" required></textarea>
                 </div>
                 <?php else: ?>
                 <div class="layui-form-item">
-                    <textarea rows="5" cols="30" name="text" id="textarea" placeholder="嘿~ 大神，别默默的看了，快来点评一下吧" class="layui-textarea" required></textarea>
+                    <textarea rows="5" cols="30" name="text" id="textarea comments" placeholder="嘿~ 大神，别默默的看了，快来点评一下吧" class="layui-textarea" required></textarea>
                 </div>
                 <div class="layui-form-item layui-row layui-col-space5">
                     <div class="layui-col-md4">
@@ -93,6 +93,7 @@ echo $commentClass;
                 </div>
             </form>
         </div>
+        <?php Smilies_Plugin::output(); ?>
         <?php if ($comments->have()): ?>
             <br/>
             <h3><?php $this->commentsNum(_t('暂无评论'), _t('唉呀 ~ 仅有一条评论'), _t('已有 %d 条评论')); ?></h3>
