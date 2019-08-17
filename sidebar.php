@@ -60,5 +60,8 @@
             <a class="layui-btn layui-btn-xs layui-btn-primary" href="https://www.qzroc.com" title='大鹏博客' target="_blank">大鹏博客</a>
             <a class="layui-btn layui-btn-xs layui-btn-primary" href="http://live.qzroc.com" title='大鹏影视站' target="_blank">大鹏影视站</a>
         </div>
+        <div>
+            <a class="layui-btn layui-btn-xs layui-btn-primary" href="https://www.club.qzroc.com" title='吾爱分享俱乐部' target="_blank">吾爱分享俱乐部</a>
+        </div>
     </div>
 </div>
