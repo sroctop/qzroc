@@ -63,6 +63,7 @@
         </div>
         <div>
             <a class="layui-btn layui-btn-xs layui-btn-primary" href="https://www.club.qzroc.com" title='吾爱分享俱乐部' target="_blank">吾爱分享俱乐部</a>
+            <a class="layui-btn layui-btn-xs layui-btn-primary" href="http://www.log.cm/" title="Bzero's Blog" target="_blank">Bzero's Blog</a>
         </div>
     </div>
 </div>
