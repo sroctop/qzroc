@@ -53,7 +53,7 @@ echo $commentClass;
         <div class="layui-col-md9 layui-col-lg9">
             <div class="about-life">
                 <div class="t-w">
-                <div class="t-u"><img height="120" src="<?php $this->options->themeUrl('img/blog.jpg'); ?>"></div>
+                <div class="t-u"><img height="120" src="<?php $this->options->themeUrl('img/logo.jpg'); ?>"></div>
                 <div class="t-t">
                     <h1>roc<span><i class="layui-icon">&#xe635;</i>前端开发工程师</span></h1>
                     <div class="t-d layui-hide-xs">
@@ -98,7 +98,7 @@ echo $commentClass;
 <script type="text/javascript" src="https://cdn.bootcss.com/typed.js/2.0.5/typed.js"></script>
 <script>
     var typed = new Typed(".t-d .typed", {
-        strings: ["请在mylife.php文件里修改此页信息"],
+        strings: ["聪明的人看到的是自己不足，固步自封的人看的是别人对他的不满。"],
         typeSpeed:30 // 速度
     });
 </script>
