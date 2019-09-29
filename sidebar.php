@@ -56,7 +56,7 @@
     </div>
 
     <div class="link">
-        <h3 class="title-sidebar"><i class="layui-icon">&#xe64c;</i>友情链接<a style="float: right;color: #666;" href="#">申请</a></h3>
+        <h3 class="title-sidebar"><i class="layui-icon">&#xe64c;</i>友情链接<a style="float: right;color: #666;" href="http://wpa.qq.com/msgrd?v=3&uin=756853308&site=qq&menu=yes">申请</a></h3>
         <div>
             <a class="layui-btn layui-btn-xs layui-btn-primary" href="https://www.qzroc.com" title='大鹏博客' target="_blank">大鹏博客</a>
             <a class="layui-btn layui-btn-xs layui-btn-primary" href="http://live.qzroc.com" title='大鹏影视站' target="_blank">大鹏影视站</a>
