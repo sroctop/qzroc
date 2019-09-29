@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/style.css'); ?>?t=<?php echo time(); ?>">
     <script src="<?php $this->options->themeUrl('layui/layui.js'); ?>"></script>
     <script src="<?php $this->options->themeUrl('js/main.js'); ?>"></script>
-    <script src="<?php $this->options->themeUrl('js/jquery.min.js'); ?>"></script>
     <script src="<?php $this->options->themeUrl('js/mouse.js'); ?>"></script>
 </head>
 <body>
