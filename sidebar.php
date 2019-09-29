@@ -8,6 +8,7 @@
                 <li><a href="<?php $this->options->logoutUrl(); ?>"><?php _e('退出'); ?></a></li>
             <?php else : ?>
                 <li class="last"><a href="<?php $this->options->adminUrl('login.php'); ?>"><?php _e('登录'); ?></a></li>
+                <li class="last"><a href="<?php $this->options->adminUrl('register.php'); ?>"><?php _e('注册'); ?></a></li>
             <?php endif; ?>
         </div>
     </div>
