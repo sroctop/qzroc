@@ -1,5 +1,16 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <div class="sidebar layui-col-md3 layui-col-lg3">
+    <div class="logins">
+        <h3 class="title-sidebar"><i class="layui-icon">&#xe66f;</i>用户</h3>
+        <div>
+            <?php if ($this->user->hasLogin()) : ?>
+                <li class="last"><a href="<?php $this->options->adminUrl(); ?>"><?php _e('进入后台'); ?> (<?php $this->user->screenName(); ?>)</a></li>
+                <li><a href="<?php $this->options->logoutUrl(); ?>"><?php _e('退出'); ?></a></li>
+            <?php else : ?>
+                <li class="last"><a href="<?php $this->options->adminUrl('login.php'); ?>"><?php _e('登录'); ?></a></li>
+            <?php endif; ?>
+        </div>
+    </div>
     <div class="component">
         <form class="layui-form" id="search" method="post" action="<?php $this->options->siteUrl(); ?>" role="search">
             <div class="layui-inline input">
@@ -39,21 +50,11 @@
         <div>
             <?php $this->widget('Widget_Metas_Tag_Cloud', 'ignoreZeroCount=1&limit=30')->to($tags); ?>
             <?php while ($tags->next()) : ?>
-            <a class="layui-btn layui-btn-xs layui-btn-primary" style="color: rgb(<?php echo (rand(0, 255)); ?>, <?php echo (rand(0, 255)); ?>, <?php echo (rand(0, 255)); ?>)" href="<?php $tags->permalink(); ?>" title='<?php $tags->name(); ?>'><?php $tags->name(); ?></a>
+                <a class="layui-btn layui-btn-xs layui-btn-primary" style="color: rgb(<?php echo (rand(0, 255)); ?>, <?php echo (rand(0, 255)); ?>, <?php echo (rand(0, 255)); ?>)" href="<?php $tags->permalink(); ?>" title='<?php $tags->name(); ?>'><?php $tags->name(); ?></a>
             <?php endwhile; ?>
         </div>
     </div>
-    <div class="logins">
-        <h3 class="title-sidebar"><i class="layui-icon">&#xe66f;</i>用户</h3>
-        <div>
-            <?php if ($this->user->hasLogin()) : ?>
-            <li class="last"><a href="<?php $this->options->adminUrl(); ?>"><?php _e('进入后台'); ?> (<?php $this->user->screenName(); ?>)</a></li>
-            <li><a href="<?php $this->options->logoutUrl(); ?>"><?php _e('退出'); ?></a></li>
-            <?php else : ?>
-            <li class="last"><a href="<?php $this->options->adminUrl('login.php'); ?>"><?php _e('登录'); ?></a></li>
-            <?php endif; ?>
-        </div>
-    </div>
+
     <div class="link">
         <h3 class="title-sidebar"><i class="layui-icon">&#xe64c;</i>友情链接<a style="float: right;color: #666;" href="#">申请</a></h3>
         <div>
