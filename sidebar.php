@@ -76,6 +76,8 @@
 
     <div class="link">
         <h3 class="title-sidebar"><i class="layui-icon">&#xe64c;</i>友情链接<a style="float: right;color: #666;" href="http://wpa.qq.com/msgrd?v=3&uin=756853308&site=qq&menu=yes">申请</a></h3>
-        <?php Links_Plugin::output(); ?>
+        <ul>
+            <?php Links_Plugin::output(); ?>
+        </ul>
     </div>
 </div>
