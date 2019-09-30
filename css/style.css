@@ -544,6 +544,7 @@ textarea {
     overflow: hidden;
     border: none;
     border-bottom: 1px solid #f0f0f0;
+    text-align: center;
 }
 
 .link ul li:hover {
@@ -570,7 +571,6 @@ textarea {
     line-height: 22px;
     padding: 0 5px;
     font-size: 12px;
-    text-align: center;
 }
 
 .link i {
