@@ -21,7 +21,6 @@
     <script src="<?php $this->options->themeUrl('layui/layui.js'); ?>"></script>
     <script src="<?php $this->options->themeUrl('js/main.js'); ?>"></script>
     <script src="<?php $this->options->themeUrl('js/mouse.js'); ?>"></script>
-    <script type="text/javascript" src="https://s4.cnzz.com/z_stat.php?id=1278073340&web_id=1278073340"></script>
 </head>
 <body>
 <!--[if lt IE 8]>
