@@ -11,5 +11,6 @@
 </div>
 
 <?php $this->footer(); ?>
+<script type="text/javascript" src="https://s4.cnzz.com/z_stat.php?id=1278073340&web_id=1278073340"></script>
 </body>
 </html>
