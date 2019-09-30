@@ -546,6 +546,11 @@ textarea {
     border-bottom: 1px solid #f0f0f0;
 }
 
+.link ul li:hover {
+    border-color: #009688;
+    color: #333;
+}
+
 .link ul li a {
     display: inline-block;
     height: 38px;
@@ -559,13 +564,13 @@ textarea {
     border: none;
     border-radius: 2px;
     cursor: pointer;
-    border: 1px solid #C9C9C9;
     background-color: #fff;
     color: #555;
     height: 22px;
     line-height: 22px;
     padding: 0 5px;
     font-size: 12px;
+    text-align: center;
 }
 
 .link i {
