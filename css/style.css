@@ -535,7 +535,7 @@ textarea {
     border-bottom: 1px solid #f0f0f0;
 }
 
-.like ul li {
+.link ul li {
     display: inline-block;
     width: 45%;
     margin: 0 6px 5px 0 !important;
@@ -546,7 +546,7 @@ textarea {
     border-bottom: 1px solid #f0f0f0;
 }
 
-.like ul li a {
+.link ul li a {
     display: inline-block;
     height: 38px;
     line-height: 38px;
