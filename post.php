@@ -26,7 +26,7 @@
             <div class="tags-text">
                 <i class="layui-icon">&#xe66e;</i><?php _e('标签: '); ?><?php $this->tags(', ', true, 'none'); ?>
             </div>
-            <div style="padding: 10px 0; margin: 20px auto; width: 100%; font-size:16px; text-align: center;">
+            <div class="copy-text" style="margin: 0 auto; width: 100%; font-size:16px; text-align: center;">
                 <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
                     <span>打赏</span></button>
                 <div id="QR" style="display: none;">
