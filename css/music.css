@@ -80,6 +80,7 @@
   left: 0;
   bottom: 0;
   z-index: 95;
+  transition: 0.5s;
 }
 .music-online-content iframe{
   width: 100%;
@@ -109,7 +110,4 @@
 }
 .music-online-button-close{
   margin-bottom: 10px;
-}
-.music-online-button-max{
-  
 }

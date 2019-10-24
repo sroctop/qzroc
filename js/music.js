@@ -1,5 +1,11 @@
 (function () {
   console.log("init");
+  // 窗口大小改变时
+  $(window).resize(function () {
+    $(".music-online-content")
+      .width(($(window).width() - 50) + 'px')
+      .height(($(window).height() - 60) + 'px');
+  });
   // 展开播放侧键
   $(".music-content-show").click(() => {
     $(".music-content").css("left", 0);
@@ -47,7 +53,7 @@
       event.stopPropagation();
       $(".music-online-content")
         .width(($(window).width() - 50) + 'px')
-        .height($(window).height() + 'px');
+        .height(($(window).height() - 60) + 'px');
       // $(".music-online-button").style("left", ($(window).width() - 50) + 'px')
     })
   })
