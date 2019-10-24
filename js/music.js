@@ -16,7 +16,7 @@
   $(".music-content-img-block img").click(() => {
     $(".music-online-content")
       .width(($(window).width() - 50) + 'px')
-      .height($(window).height() + 'px');
+      .height(($(window).height() - 60) + 'px');
     $(".music-content").hide();
     $(".music-online").show();
 
