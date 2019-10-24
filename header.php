@@ -21,11 +21,9 @@
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/style.css'); ?>?t=<?php echo time(); ?>">
     <script src="<?php $this->options->themeUrl('layui/layui.js'); ?>"></script>
     <script src="<?php $this->options->themeUrl('js/main.js'); ?>"></script>
-<<<<<<< HEAD
     <script src="<?php $this->options->themeUrl('js/mouse.js'); ?>"></script>
-=======
+    <script src="<?php $this->options->themeUrl('js/jquery.min.js'); ?>"></script>
     <script src="<?php $this->options->themeUrl('js/music.js'); ?>"></script>
->>>>>>> master
 </head>
 <body>
 <!--[if lt IE 8]>
