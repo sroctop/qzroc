@@ -10,6 +10,37 @@
     </div>
 </div>
 
+<div class="qzroc-music">
+<div class="music-content">
+    <div class="music-content-img">
+      <div class="music-content-img-block">
+        <img src="http://qiniu.qzroc.com/qzroc-music-bg.png" alt="">
+      </div>
+    </div>
+    <div class="music-content-show">
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32">
+        <path d="M22 16l-10.105-10.6-1.895 1.987 8.211 8.613-8.211 8.612 1.895 1.988 8.211-8.613z"></path>
+      </svg>
+    </div>
+    <div class="music-content-hide">
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32">
+        <path d="M22 16l-10.105-10.6-1.895 1.987 8.211 8.613-8.211 8.612 1.895 1.988 8.211-8.613z"></path>
+      </svg>
+    </div>
+  </div>
+
+  <div class="music-online">
+    <div class="music-online-content">
+      <iframe src="https://mp3.qzroc.com/" frameborder="0"></iframe>
+      <div class="music-online-button">
+        <div class="music-online-button-close music-online-button-info">×</div>
+        <div class="music-online-button-max music-online-button-info">∞</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 <?php $this->footer(); ?>
 </body>
 </html>
