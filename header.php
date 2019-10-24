@@ -23,7 +23,7 @@
     <script src="<?php $this->options->themeUrl('js/main.js'); ?>"></script>
     <script src="<?php $this->options->themeUrl('js/mouse.js'); ?>"></script>
     <script src="<?php $this->options->themeUrl('js/jquery.min.js'); ?>"></script>
-    <script src="<?php $this->options->themeUrl('js/music.js'); ?>"></script>
+    
 </head>
 <body>
 <!--[if lt IE 8]>

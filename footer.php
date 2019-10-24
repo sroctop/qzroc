@@ -41,7 +41,7 @@
 
   </div>
 </div>
-
+<script src="<?php $this->options->themeUrl('js/music.js'); ?>"></script>
 <?php $this->footer(); ?>
 </body>
 </html>
