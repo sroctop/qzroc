@@ -5,11 +5,12 @@
 
   function handleBindClickFunction() {
     // 展开播放侧键
-    $(".music-content-show").click(() => {
+    $("body").on("click",".music-content-show",function(){
       $(".music-content").css("left", 0);
       $(".music-content-hide").show();
       $(".music-content-show").hide();
-    })
+    });
+
     // 收起播放侧键
     $(".music-content-hide").click(() => {
       $(".music-content").css("left", "-66px");
