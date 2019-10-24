@@ -3,6 +3,12 @@
     handleBindClickFunction();
   }
 
+  $("body").on("click", ".music-content-show", () => {
+    $(".music-content").css("left", 0);
+    $(".music-content-hide").show();
+    $(".music-content-show").hide();
+  });
+
   function handleBindClickFunction() {
     // 展开播放侧键
     $("body").on("click",".music-content-show",function(){
