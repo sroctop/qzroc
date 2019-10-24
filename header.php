@@ -41,6 +41,9 @@
             <li class="layui-nav-item layui-hide-xs <?php if($this->is('index')): ?>layui-this<?php endif; ?>">
                 <a href="<?php $this->options->siteUrl(); ?>"><?php _e('首页'); ?></a> 
             </li>
+            <li class="layui-nav-item layui-hide-xs">
+                <a href="https://www.qzroc.com/index.php/category/program/" target="_blank"><?php _e('毕业设计'); ?></a> 
+            </li>
             <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
             <?php while($pages->next()): ?>
             <li class="layui-nav-item layui-hide-xs <?php if($this->is('page', $pages->slug)): ?>layui-this<?php endif; ?>">
