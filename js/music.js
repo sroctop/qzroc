@@ -1,5 +1,6 @@
 (function () {
   console.log("init");
+  let setMusicNumber = 0;
   // 窗口大小改变时
   $(window).resize(function () {
     $(".music-online-content")
@@ -20,9 +21,27 @@
   })
   // 启动音乐播放器
   $(".music-content-img-block img").click(() => {
+
+    let musicSetWidth = 270;
+    let musicSetHeight = 508;
+    let musicWidth = $(window).width() - 50;
+    let musicHeight = $(window).height() - 60;
+
+    if (musicWidth >= 320) { // 如果屏幕宽度大于320，则只有320 ，如果小于320，则宽度为当前屏幕宽度
+      musicSetWidth = 320;
+    } else if (musicWidth <= 320) {
+      musicSetWidth = musicWidth;
+    }
+
+    if (musicHeight >= 508) { // 如果屏幕高度大于508，则只有508 ，如果小于508，则高度为当前屏幕高度
+      musicSetHeight = 508;
+    } else if (musicHeight <= 508) {
+      musicSetHeight = musicHeight;
+    }
+
     $(".music-online-content")
-      .width(($(window).width() - 50) + 'px')
-      .height(($(window).height() - 60) + 'px');
+      .width(musicSetWidth + 'px')
+      .height(musicSetHeight + 'px');
     $(".music-content").hide();
     $(".music-online").show();
 
@@ -50,13 +69,24 @@
 
     // 放大播放器
     $(".music-online-button-max").click(() => {
+      setMusicNumber++;
+      (setMusicNumber % 2 === 0) ? music_max() : music_min()
       event.stopPropagation();
       $(".music-online-content")
         .width(($(window).width() - 50) + 'px')
         .height(($(window).height() - 60) + 'px');
-      // $(".music-online-button").style("left", ($(window).width() - 50) + 'px')
+
+      function music_max() {
+        $(".music-online-content")
+          .width(($(window).width() - 50) + 'px')
+          .height(($(window).height() - 60) + 'px');
+      }
+
+      function music_min() {
+        $(".music-online-content")
+          .width(320 + 'px')
+          .height(508 + 'px');
+      }
     })
   })
-
-
 })()
