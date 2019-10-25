@@ -39,9 +39,6 @@
       musicSetHeight = musicHeight;
     }
 
-    console.log('musicSetWidth', musicSetWidth);
-    console.log('musicSetHeight', musicSetHeight);
-
     $(".music-online-content")
       .width(musicSetWidth + 'px')
       .height(musicSetHeight + 'px');
@@ -73,23 +70,32 @@
     // 放大播放器
     $(".music-online-button-max").click(() => {
       setMusicNumber++;
-      (setMusicNumber % 2 === 0) ? music_max() : music_min()
-      event.stopPropagation();
-      $(".music-online-content")
-        .width(($(window).width() - 50) + 'px')
-        .height(($(window).height() - 60) + 'px');
-
-      function music_max() {
+      console.log('setMusicNumber', setMusicNumber);
+      (setMusicNumber % 2 === 0)
+        ?
         $(".music-online-content")
           .width(($(window).width() - 50) + 'px')
-          .height(($(window).height() - 60) + 'px');
-      }
-
-      function music_min() {
+          .height(($(window).height() - 60) + 'px')
+        :
         $(".music-online-content")
           .width(320 + 'px')
-          .height(508 + 'px');
-      }
+          .height(508 + 'px')
+      event.stopPropagation();
+      // $(".music-online-content")
+      //   .width(($(window).width() - 50) + 'px')
+      //   .height(($(window).height() - 60) + 'px');
+
+      // function music_max() {
+      //   $(".music-online-content")
+      //     .width(($(window).width() - 50) + 'px')
+      //     .height(($(window).height() - 60) + 'px');
+      // }
+
+      // function music_min() {
+      //   $(".music-online-content")
+      //     .width(320 + 'px')
+      //     .height(508 + 'px');
+      // }
     })
   })
 })()
