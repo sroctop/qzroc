@@ -7,6 +7,13 @@
       .width(($(window).width() - 50) + 'px')
       .height(($(window).height() - 60) + 'px');
   });
+
+  if ($(window).width() > 320) {
+    $(".music-content").css("left", 0);
+    $(".music-content-hide").show();
+    $(".music-content-show").hide();
+  }
+
   // 展开播放侧键
   $(".music-content-show").click(() => {
     $(".music-content").css("left", 0);
@@ -45,57 +52,44 @@
     $(".music-content").hide();
     $(".music-online").show();
 
-    // 点击外侧内容，隐藏播放器
-    $(".music-online").click(() => {
-      $(".music-content").show();
-      $(".music-online").hide();
 
-      $(".music-content").css("left", "-66px");
-      $(".music-content-hide").hide();
-      $(".music-content-show").show();
-    })
-
-    // 点击关闭按钮
-    $(".music-online-button-close").click(() => {
-      // console.log("close");
-      event.stopPropagation();
-      $(".music-content").show();
-      $(".music-online").hide();
-
-      $(".music-content").css("left", "-66px");
-      $(".music-content-hide").hide();
-      $(".music-content-show").show();
-    })
-
-    // 放大播放器
-    $(".music-online-button-max").click(() => {
-      setMusicNumber++;
-      console.log('setMusicNumber', setMusicNumber);
-      (setMusicNumber % 2 === 0)
-        ?
-        $(".music-online-content")
-          .width(($(window).width() - 50) + 'px')
-          .height(($(window).height() - 60) + 'px')
-        :
-        $(".music-online-content")
-          .width(320 + 'px')
-          .height(508 + 'px')
-      event.stopPropagation();
-      // $(".music-online-content")
-      //   .width(($(window).width() - 50) + 'px')
-      //   .height(($(window).height() - 60) + 'px');
-
-      // function music_max() {
-      //   $(".music-online-content")
-      //     .width(($(window).width() - 50) + 'px')
-      //     .height(($(window).height() - 60) + 'px');
-      // }
-
-      // function music_min() {
-      //   $(".music-online-content")
-      //     .width(320 + 'px')
-      //     .height(508 + 'px');
-      // }
-    })
   })
+  // 点击外侧内容，隐藏播放器
+  $(".music-online").click(() => {
+    $(".music-content").show();
+    $(".music-online").hide();
+
+    $(".music-content").css("left", "-66px");
+    $(".music-content-hide").hide();
+    $(".music-content-show").show();
+  })
+
+  // 点击关闭按钮
+  $(".music-online-button-close").click(() => {
+    // console.log("close");
+    event.stopPropagation();
+    $(".music-content").show();
+    $(".music-online").hide();
+
+    $(".music-content").css("left", "-66px");
+    $(".music-content-hide").hide();
+    $(".music-content-show").show();
+  })
+
+  // 放大播放器
+  $(".music-online-button-max").click(() => {
+    setMusicNumber++;
+    console.log('setMusicNumber', setMusicNumber);
+    (setMusicNumber % 2 === 0)
+      ?
+      $(".music-online-content")
+        .width(($(window).width() - 50) + 'px')
+        .height(($(window).height() - 60) + 'px')
+      :
+      $(".music-online-content")
+        .width(320 + 'px')
+        .height(508 + 'px')
+    event.stopPropagation();
+  })
+  
 })()
