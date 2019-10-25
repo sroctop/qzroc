@@ -39,6 +39,9 @@
       musicSetHeight = musicHeight;
     }
 
+    console.log('musicSetWidth', musicSetWidth);
+    console.log('musicSetHeight', musicSetHeight);
+
     $(".music-online-content")
       .width(musicSetWidth + 'px')
       .height(musicSetHeight + 'px');
