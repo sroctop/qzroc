@@ -1,6 +1,6 @@
 (function () {
   console.log("init");
-  let setMusicNumber = 0;
+  let setMusicNumber = 1;
   // 窗口大小改变时
   $(window).resize(function () {
     $(".music-online-content")
