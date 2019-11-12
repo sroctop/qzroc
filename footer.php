@@ -43,5 +43,10 @@
 </div>
 <script src="<?php $this->options->themeUrl('js/music.js'); ?>"></script>
 <?php $this->footer(); ?>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $( ".fancybox").fancybox();
+    });
+</script>
 </body>
 </html>

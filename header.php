@@ -19,10 +19,12 @@
     <link rel="stylesheet" href="<?php $this->options->themeUrl('layui/css/layui.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/music.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/style.css'); ?>?t=<?php echo time(); ?>">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/jquery.fancybox.min.css'); ?>?t=<?php echo time(); ?>">
     <script src="<?php $this->options->themeUrl('layui/layui.js'); ?>"></script>
     <script src="<?php $this->options->themeUrl('js/main.js'); ?>"></script>
     <script src="<?php $this->options->themeUrl('js/mouse.js'); ?>"></script>
     <script src="<?php $this->options->themeUrl('js/jquery.min.js'); ?>"></script>
+    <script src="<?php $this->options->themeUrl('js/jquery.fancybox.min.js'); ?>"></script>
     
 </head>
 <body>

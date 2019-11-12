@@ -21,7 +21,13 @@
                 </div>
             </div>
             <div class="text" itemprop="articleBody">
-                <?php $this->content(); ?>
+                <!-- <?php $this->content(); ?> -->
+                <?php
+                $pattern = '/\<img.*?src\=\"(.*?)\"[^>]*>/i';
+                $replacement = '<a href="$1" data-fancybox="gallery" /><img src="$1" alt="' . $this->title . '" title="点击放大图片"></a>';
+                $content = preg_replace($pattern, $replacement, $this->content);
+                echo $content;
+                ?>
             </div>
             <div class="tags-text">
                 <i class="layui-icon">&#xe66e;</i><?php _e('标签: '); ?><?php $this->tags(', ', true, 'none'); ?>
